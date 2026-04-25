@@ -1,0 +1,177 @@
+/* Reset dasar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial,
+    sans-serif;
+}
+
+body {
+  background-color: #f4f4f9; /* Warna background lembut */
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 40px 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+}
+
+.container {
+  width: 100%;
+  max-width: 480px; /* Lebar maksimal menyerupai tampilan HP */
+  text-align: center;
+  padding: 100px;
+}
+
+/* Profil */
+.profile-section {
+  margin-bottom: 30px;
+}
+
+.profile-pic {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
+}
+
+.profile-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 5px;
+  color: #222;
+}
+
+.profile-bio {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.5;
+}
+
+/* Tombol Link */
+.links-section {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+.link-btn {
+  display: block;
+  width: 160px;
+  height: 100%;
+  text-align: center;
+  margin: 0 auto;
+  padding: 16px 20px;
+  background-color: #ffffff;
+  color: #333;
+  text-decoration: none;
+  font-size: 1.05rem;
+  font-weight: 600;
+  border-radius: 12px;
+  border: 1px solid #eaeaea;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+/* Efek Hover */
+.link-btn:hover {
+  background-color: #049442;
+  color: #ffffff;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Break Point  */
+@media (min-width: 768px) {
+  .link-btn {
+    display: block;
+    width: 280px;
+    height: 100%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 16px 20px;
+    background-color: #ffffff;
+    color: #333;
+    text-decoration: none;
+    font-size: 1.05rem;
+    font-weight: 600;
+    border-radius: 12px;
+    border: 1px solid #eaeaea;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+  }
+}
+
+/* Footer */
+footer p {
+  font-size: 0.85rem;
+  color: #999;
+}
+/* Efek Hover dan Active untuk Menu Navbar */
+.navbar-nav .nav-link {
+  color: #555;
+  transition: all 0.3s ease;
+  padding-bottom: 5px;
+}
+.navbar-nav .nav-link:hover {
+  color: #e53935;
+}
+.navbar-nav .nav-link.active {
+  color: #e53935 !important;
+  font-weight: 700;
+  border-bottom: 3px solid #e53935;
+}
+/* Top Navbar */
+.top-navbar {
+  width: 100%;
+  height: 40px;
+  background-color: #049442;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  box-shadow: 4px 2px 4px 0px rgba(0, 0, 0, 0.25);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.top-navbar-content {
+  width: 100%;
+  max-width: 1440px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 15px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.pandu-digital {
+  font-family: "Vibur", cursive;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.1em;
+  letter-spacing: 0.945px; /* 4.5% of 21px */
+  text-align: center;
+  color: #ffffff;
+  width: 200px;
+  height: 23px;
+  position: absolute;
+  left: 50%;
+  top: 12px;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
